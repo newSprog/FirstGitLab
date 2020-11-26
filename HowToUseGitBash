@@ -1,0 +1,71 @@
+github账户
+user:liyaobo@romens.cn
+pass:Honor.1874
+
+
+gitlab账户
+user:724015935@qq.com
+pass:Honor.1874
+
+
+
+
+
+
+1.查看是在当前那个目录
+pwd
+
+2.进入到指定的文件夹之后，使用git init指令将本地文件夹变成本地仓库
+git init
+
+3.查看git config文件
+git config --list
+4.查看git版本
+git --version
+
+5.查看命令帮助
+git commit -help
+
+6.初始化配置全局用户名和邮箱
+git config --global user.email "邮箱"
+git config --global user.name "姓名"
+
+7.本地创建文件添加到暂存区以及提交
+git add "文件名"
+git commit -m "备注"
+git commit -a   跳过添加到缓存区的步骤
+
+8.从git仓库中拷贝项目到本地文件夹
+git clone "git仓库项目链接" "本地文件夹存放的路径"
+git clone git@github.com:fsliurujie/test.git         --SSH协议
+git clone git://github.com/fsliurujie/test.git          --GIT协议
+git clone https://github.com/fsliurujie/test.git      --HTTPS协议
+
+9.git status 命令用于查看项目的当前状态
+git status -s   
+
+A表示添加  AM表示添加之后又有变动，此时需要再次执行git add . 命令
+
+10.git 查看暂存区有哪些文件
+git ls-files
+git ls-list | grep "文件名"
+
+11.将文件从暂存池中删除
+git restore --staged "文件名"
+git rm --cached "文件名"
+
+12.git diff 命令比较文件的不同
+git diff   没有缓存的改动
+git diff --cached  查看已经缓存的改动   git diff --staged [file]
+git diff HEAD 查看所有改动
+
+13. git reset HEAD 以取消之前 git add 添加
+14.移动工作区文件
+git mv file newfile
+
+15.查看提交日志记录和修改记录
+git log
+git blame <文件名>
+git log -p <文件名>
+
+16.
